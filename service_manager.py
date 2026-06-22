@@ -28,11 +28,11 @@ def get_desktop_dir() -> Path:
 
 def get_vbs_path() -> Path:
     """隐藏运行的 VBS 启动脚本路径。"""
-    return get_tools_dir() / "port_forwarder" / "run_service.vbs"
+    return get_tools_dir() / "port_forwarder" / "start_hidden.vbs"
 
 
 def generate_run_vbs() -> Path:
-    """生成无窗口启动脚本。"""
+    """生成无窗口启动脚本 (start_hidden.vbs)。"""
     tools_dir = get_tools_dir()
     vbs_path = get_vbs_path()
 

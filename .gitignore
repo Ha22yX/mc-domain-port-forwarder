@@ -4,7 +4,7 @@ __pycache__/
 *.pyd
 .Python
 mappings.json
-run_service.vbs
+start_hidden.vbs
 *.lnk
 .vscode/
 .idea/
