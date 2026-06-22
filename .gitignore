@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+mappings.json
+run_service.vbs
+*.lnk
+.vscode/
+.idea/
