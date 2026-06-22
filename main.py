@@ -13,8 +13,12 @@ port_forwarder/main.py
 
 import sys
 import threading
+from pathlib import Path
 
-sys.path.insert(0, "C:/Users/Administrator/Desktop/tools")
+# 允许从任意目录启动：把项目根目录 (Desktop/tools) 加入 sys.path
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from port_forwarder.config import Config
 from port_forwarder.proxy import start_proxy
