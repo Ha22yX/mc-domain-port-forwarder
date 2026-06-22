@@ -56,10 +56,19 @@ port_forwarder/
 ├── web.py               # Web management UI (port 25567)
 ├── config.py            # Mapping persistence
 ├── service_manager.py   # Auto-start / shortcut / hidden run
-├── run_service.vbs      # Auto-generated hidden launcher
+├── start.bat            # One-click launcher (shows console)
+├── start_hidden.vbs     # Auto-generated hidden launcher
 └── README.md            # This file
 ```
 
-## License
+`start_hidden.vbs` and `mappings.json` are generated at runtime.
 
-MIT
+## Launch Options
+
+1. **Show console**: Double-click `start.bat`
+2. **No console**: Use the web UI buttons (Run Now / Create Desktop Shortcut / Enable Auto Start)
+3. **Command line**:
+   ```bash
+   cd Desktop/tools
+   python -m port_forwarder.main
+   ```
